@@ -267,6 +267,28 @@ img {
     .facebook svg { width: 11px; }
     .twitter svg { width: 16px; }
     .instagram svg { width: 18px; }
+
+    .slide-right {
+        animation: .5s .5s slideright backwards ease-out;
+    }
+
+    .slide-left {
+        animation: .5s .25s slideleft backwards ease-out;
+    }
+
+    @keyframes slideright {
+        from {
+            transform: translate3d(2rem, 0, 0);
+            opacity: 0;
+        }
+    }
+
+    @keyframes slideleft {
+        from {
+            transform: translate3d(-2rem, 0, 0);
+            opacity: 0;
+        }
+    }
 }
 
 @media (min-width: 1200px) {
